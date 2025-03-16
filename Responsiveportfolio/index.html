@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script defer src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+            <h1>Safreen Fawzia</h1>
+            <h3>And I'm a <span class="typing"></span></h3>
+            <p>ECE student passionate about coding and new technologies like Java, frontend development, and more.</p>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+            <a href="#about" class="btn">More About Me</a>
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <p>I'm an Electronics and Communication Engineering student adapting to new emerging technologies.</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+    
+    <section class="portfolio" id="portfolio">
+        <h2>Latest <span>Project</span></h2>
+        <div class="portfolio-item">
+            <img src="project.jpg" alt="Project Image">
+            <div class="overlay">
+                <h3>UI/UX Design</h3>
+                <p>Creative web design projects.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <h2>Contact <span>Me</span></h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>Developed by Safreen Fawzia - 2025</p>
+    </footer>
+    
+    <script>
+        var typed = new Typed(".typing", {
+            strings: ["Frontend Developer", "YouTuber", "Web Developer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+    </script>
+</body>
+</html>
